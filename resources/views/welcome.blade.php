@@ -19,10 +19,10 @@
         <!-- Navbar -->
         <nav class="navbar sticky-top navbar-light bg-light">
             <img width="10%" class="d-inline-block align-top" alt="" loading="lazy" src="img/logo.png">
-            <a>Shops</a>
-            <a>Restaurants</a>
+            <a href="$shop">Shops</a>
+            <a href="$restaurant">Restaurants</a>
             <a>Contact</a>
-            <a>Languaje</a>
+            <a>Language</a>
         </nav>
         <!-- Carousel -->
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
