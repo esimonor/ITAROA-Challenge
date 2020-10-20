@@ -1,0 +1,49 @@
+.container{
+    border:1px solid grey;
+    margin:2%;
+    display: flex;
+    width: 80%;
+    background-color: #ff4f00;
+    box-shadow: 2px 2px 1px #8890AE;
+}
+
+.container2{
+    border:1px solid grey;
+    margin:2%;
+    display: flex;
+    width: 80%;
+    background-color: #00b562;
+    box-shadow: 2px 2px 1px #8890AE;
+}
+
+.texto{
+    width: 65%;
+    font-family: Arsenal;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: white;
+    text-shadow: 1px 1px 10px #000;
+}
+.imagen{
+    transform: skew(-2deg);
+    flex: 20%;
+    padding: 1%;
+    width: 30%;
+}
+
+.location{
+    color: white;
+    text-shadow: 1px 1px 10px #000;
+    border:1px solid grey;
+    margin:2%;
+    display: flex;
+    width: 80%;
+    background-color: rgb(201, 19, 19);
+    box-shadow: 2px 2px 1px #8890AE;
+}
+#mapa{
+    margin-top: 1%;
+}
+#horarios{
+    margin:2%;
+}
