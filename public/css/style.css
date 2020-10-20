@@ -23,6 +23,7 @@
     font-size: 1.2em;
     color: white;
     text-shadow: 1px 1px 10px #000;
+    margin: 1%;
 }
 .imagen{
     transform: skew(-2deg);
@@ -46,4 +47,10 @@
 }
 #horarios{
     margin:2%;
+}
+.footer{
+    align-content: center;
+    text-align: center;
+    border-top: 2px solid gray;
+    font-family: Arsenal;
 }

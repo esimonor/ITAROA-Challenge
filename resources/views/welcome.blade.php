@@ -38,10 +38,10 @@
                     <img src="img/espacio-itaroa.png" class="d-block w-100" alt="Cartel">
                     </div>
                     <div class="carousel-item">
-                    <img src="img/itaroa_header.png" class="d-block w-100" alt="Ubicacion">
+                    <img src="img/itaroa_header.png" class="d-block w-100" alt="Itaroa logo">
                     </div>
                     <div class="carousel-item">
-                    <img src="img/mall.png" class="d-block w-100" alt="Itaroa logo">
+                    <img src="img/mall.png" class="d-block w-100" alt="Centro">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -57,21 +57,21 @@
         <!--Image with text section-->
         <div class="container">
             <div class="texto">
-                <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, ut exercitationem id, natus hic esse eum, atque pariatur blanditiis consectetur quia.</p>
+                <h3>Restaurants</h3>
+                <p>Wide varaiety of quality restaurants are waiting to serve you a delicious meal.</p>
             </div>
                 <img class="imagen" src="img/restaurant.jpg">
         </div>
         <div class="container2">
-            <div class="imagen">
-                <img src="img/shops.jpg">
-            </div>
+                <img class="imagen" src="img/shops.jpg">
             <div class="texto">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, similique. Consequatur natus facere expedita repellat ipsum quae impedit! Mollitia officia labore non voluptatem alias rem sit placeat cum id earum.</p>
+                <h3>Shops</h3>
+                <p>Lots of shops for all your needs, from groceries to clothing, and all of that at an afordable product.</p>
             </div>
         </div>
         <!--Location-->
         <div class="location">
-            <div id="horarios">
+            <div class="texto">
                 <div>
                     <h4>Horario Comercial</h4>
                     <div>Lunes a sábados, de 10:00 a 22:00h
@@ -104,7 +104,9 @@
             <iframe scrolling="no" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=42.8276398,%20-1.5847707+(Itaroa)&amp;t=h&amp;z=17&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" width="95%" height="300" frameborder="1"></iframe>
             </div>
         </div>
-
+    <footer class="footer">
+      <p>ITAROA &copy 2020</p>
+    </footer>
     
     <!-- JQUERY, POPPER, BOOTSTRAP-->
     <script src="js/jquery-3.5.1.min.js"></script>
