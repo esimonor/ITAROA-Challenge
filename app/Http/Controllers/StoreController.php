@@ -56,7 +56,7 @@ class StoreController extends Controller
         // Relaciono el id de la tienda con el de los productos para guardar los productos de esta tienda
         $products = Product::where('store_id', $id)->get();
 
-        return view('product')->with(['store' => $store, 'products' => $products]);
+        return view('tienda')->with(['store' => $store, 'products' => $products]);
     }
 
     /**

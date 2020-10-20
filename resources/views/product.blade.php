@@ -16,12 +16,12 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
     </head>
 
-    
+
 	<body> 
  		<!-- Navbar -->
         <nav class="navbar sticky-top navbar-light bg-light">
             <img width="10%" class="d-inline-block align-top" alt="" loading="lazy" src="img/logo.png">
-            <a href="$shop">Shops</a>
+            <a href="#stores">Shops</a>
             <a href="$restaurant">Restaurants</a>
             <a>Contact</a>
             <a>Language</a>
@@ -59,7 +59,7 @@
 
 
         <a href="{{route('stores.show', $product->store_id)}}"><img src="/img/arrow_back_icon.svg"></a>
-    <div id="contenido">
+    	<div id="contenido">
         <!-- información del producto -->
         <section id="info" >
             <h2>{{$product->name}} </h2>
