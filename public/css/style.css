@@ -1,6 +1,9 @@
 *{
     scroll-behavior: smooth;
 }
+nav{
+    font-family:Alef;
+}
 .container{
     border:1px solid grey;
     margin:2%;
@@ -21,7 +24,7 @@
 
 .texto{
     width: 65%;
-    font-family: Arsenal;
+    font-family: Alef;
     font-weight: bold;
     font-size: 1.2em;
     color: white;
@@ -93,14 +96,16 @@
   .overlay:hover {
     opacity: 1;
     border: 1px solid black;
+    box-shadow: 1px 2px 5px black;
   }
 
   .shop-name {
     margin-top: 35%;
     color: black;
-    text-shadow:#00D942 2px 2px 5px, #002B75 2px 2px 7px;
+    text-shadow:1px 2px 3px gray ;
     font-size: 2em;
     text-align: center;
+    font-family: Alef;
   }
 @media only screen and (max-width: 768px) {
     .container, .container2, .location{
@@ -111,5 +116,14 @@
         width: 50%;
         height: fit-content;
     }
+    .row-establishments{
+        display: inline-block;
     
+    }
+    .card{
+        width: 95%;
+    }
+    .card-img{
+        width: 20%;
+    }
   }
