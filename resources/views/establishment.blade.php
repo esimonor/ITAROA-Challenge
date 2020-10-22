@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Itaroa</title>
-        <link rel="icon" href="img/logo-composer-transparent3.png" type="image/png" sizes="16x16">
+        <link rel="icon" href="{{url('img/logo-composer-transparent3.png')}}"type="image/png" sizes="16x16">
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Alef" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Arsenal' rel='stylesheet'>
@@ -26,6 +26,10 @@
             <a>Contact</a>
             <a>Languaje</a>
         </nav>
+
+        <!-- Banner -->
+        <div class="banner">
+        </div>
 
         <!--Shops and restaurants-->
         <div class="row-establishments">
