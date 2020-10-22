@@ -1,0 +1,138 @@
+*{
+    scroll-behavior: smooth;
+}
+nav{
+    font-family:Alef;
+}
+.container{
+    border:1px solid grey;
+    margin:2%;
+    display: flex;
+    width: 80%;
+    background-color: #ff4f00;
+    box-shadow: 2px 2px 1px #8890AE;
+}
+
+.container2{
+    border:1px solid grey;
+    margin:2%;
+    display: flex;
+    width: 80%;
+    background-color: #00b562;
+    box-shadow: 2px 2px 1px #8890AE;
+}
+
+.texto{
+    width: 65%;
+    font-family: Alef;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: white;
+    text-shadow: 1px 1px 10px #000;
+    margin: 1%;
+}
+.imagen{
+    transform: skew(-2deg);
+    flex: 20%;
+    padding: 1%;
+    width: 30%;
+    height: 100%;
+}
+
+.location{
+    color: white;
+    text-shadow: 1px 1px 10px #000;
+    border:1px solid grey;
+    margin:2%;
+    display: flex;
+    width: 80%;
+    background-color: rgb(201, 19, 19);
+    box-shadow: 2px 2px 1px #8890AE;
+}
+#mapa{
+    margin-top: 1%;
+}
+#horarios{
+    margin:2%;
+}
+.footer{
+    align-content: center;
+    text-align: center;
+    border-top: 2px solid gray;
+    font-family: Arsenal;
+}
+
+.banner{
+    width: 100%;
+    height: 300px;
+    background-image: url("/img/logo.png");
+}
+.banner:hover{
+   filter: invert(100%);
+}
+
+.row-establishments{
+    display: flex;
+    border:1px solid grey;
+    margin:2%;
+    width: 95%;
+
+}
+.card{
+    text-align: center;
+    float: left;
+    width: 30%;
+    margin: 1.5%;
+}
+.card-img{
+    flex: 10%;
+    padding: 1%;
+    width: 50%;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.75s;
+    background-color: #f7f7f7;
+  }
+  
+  .overlay:hover {
+    opacity: 1;
+    border: 1px solid black;
+    box-shadow: 1px 2px 5px black;
+  }
+
+  .shop-name {
+    margin-top: 35%;
+    color: black;
+    text-shadow:1px 2px 3px gray ;
+    font-size: 2em;
+    text-align: center;
+    font-family: Alef;
+  }
+@media only screen and (max-width: 768px) {
+    .container, .container2, .location{
+        width: 100%;
+    }
+    
+    .texto, .imagen{
+        width: 50%;
+        height: fit-content;
+    }
+    .row-establishments{
+        display: inline-block;
+    
+    }
+    .card{
+        width: 95%;
+    }
+    .card-img{
+        width: 20%;
+    }
+  }

@@ -13,10 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'App\Http\Controllers\establishmentController@index')->name('welcome');
 
 
-/* Resource Controller routes */
-Route::resource('stores', 'StoreController')->only('welcome', 'show');
+Route::resource('establishment', 'App\Http\Controllers\establishmentController')->only('index', 'show');
+

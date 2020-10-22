@@ -3,11 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Store;
-use App\Product;
+use App\Models\Establishments;
+use App\Models\Products;
 
 
-class StoreController extends Controller
+class establishmentController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -16,8 +16,8 @@ class StoreController extends Controller
      */
     public function index()
     {
-        $shops = Store::where('type', 'shop')->get();
-        $restaurants = Store::where('type', 'restaurant')->get();
+        $shops = Establishments::where('type', 'shop')->get();
+        $restaurants = Establishments::where('type', 'restaurant')->get();
 
         return view('welcome')->with(['shops' => $shops, 'restaurants' => $restaurants]);
     }
@@ -52,11 +52,11 @@ class StoreController extends Controller
     public function show($id)
     {
         // Busco en la bd la tienda que disponga de dicho id
-        $store = Store::find($id);
+        $establishment = Establishments::find($id);
         // Relaciono el id de la tienda con el de los productos para guardar los productos de esta tienda
-        $products = Product::where('store_id', $id)->get();
+        $products = Products::where('establishment_id', $id)->get();
 
-        return view('tienda')->with(['store' => $store, 'products' => $products]);
+        return view('establishment')->with(['establishment' => $establishment, 'products' => $products]);
     }
 
     /**
