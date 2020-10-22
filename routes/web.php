@@ -13,9 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/establishment', function () {
-    return view('establishment');
-});
+Route::get('/', 'App\Http\Controllers\establishmentController@index')->name('welcome');
+
+
+Route::resource('establishment', 'App\Http\Controllers\establishmentController')->only('index', 'show');
+

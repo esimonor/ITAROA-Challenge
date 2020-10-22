@@ -1,0 +1,9 @@
+[{"name":"HyM","type":"shop","phone":"945783489","photo":"img/hm.png","openAt":"08:00 AM","closeAt":"08:00 PM"},
+{"name":"Mango","type":"shop","phone":"941584752","photo":"img/mango.png","openAt":"09:00 AM","closeAt":"09:00 PM"},
+{"name":"Forum","type":"shop","phone":"943687521","photo":"img/forum.png","openAt":"08:30 AM","closeAt":"09:00 PM"},
+{"name":"Springfield","type":"shop","phone":"987425481","photo":"img/springfield.png","openAt":"10:00 AM","closeAt":"10:00 PM"},
+{"name":"Don G","type":"restaurant","phone":"943658452","photo":"img/dong.png","openAt":"08:00 AM","closeAt":"10:00 PM"},
+{"name":"KFC","type":"restaurant","phone":"975863241","photo":"img/kfc.png","openAt":"08:00 AM","closeAt":"11:00 PM"},
+{"name":"100 Montaditos","type":"restaurant","phone":"951847623","photo":"img/100montaditos.png","openAt":"09:00 AM","closeAt":"10:00 PM"},
+{"name":"Burger King","type":"restaurant","phone":"357951456","photo":"img/burgerking.png","openAt":"09:30 AM","closeAt":"12:00 PM"}
+]
