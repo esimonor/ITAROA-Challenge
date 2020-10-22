@@ -9,7 +9,7 @@ class Establishments extends Model
 
     public function product()
     {
-    	return $this->hasMany('App\Products');
+    	return $this->hasMany('App\Models\Products');
     }
 }
 

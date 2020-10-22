@@ -10,6 +10,6 @@ class Products extends Model
 
     public function product()
     {
-    	return $this->belongsTo('App\Establishments');
+    	return $this->belongsTo('App\Models\Establishments');
     }
 }

@@ -1,9 +1,8 @@
 <?php
-
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Model\Establishments;
+use App\Models\Establishments;
 
 class EstablishmentSeeder extends Seeder
 {
@@ -16,10 +15,10 @@ class EstablishmentSeeder extends Seeder
     {
 
 
-        $json = File::get('database/data/establishmentData.json');
+        $json = file_get_contents("database/data/establishmentData.json");
         $data = json_decode($json);
         foreach ($data as $obj) {
-            Store::create(array(
+            Establishments::create(array(
                 'name' => $obj->name,
                 'type' => $obj->type,
                 'phone' => $obj->phone,
@@ -31,3 +30,4 @@ class EstablishmentSeeder extends Seeder
 
     }
 }
+
