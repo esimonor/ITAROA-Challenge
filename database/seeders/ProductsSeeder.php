@@ -24,7 +24,7 @@ class ProductsSeeder extends Seeder
                 'price' => $obj->price,
                 'photo' => $obj->photo,
                 'link' => $obj->link,
-                'store_id' => $obj->store_id
+                'establishment_id' => $obj->establishment_id
             ));
         }
     }
