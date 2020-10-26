@@ -39,6 +39,8 @@
             <i>Phone: 123456789</i>
             
         </div>
+
+      
         <div class="row-products">
             <div class="card">
                 <img class="card-img" src="img/como_llegar_footer1.jpg">
@@ -60,7 +62,7 @@
                 <p style="border:1px solid black">39,99€</p>
             </div>
         </div>
-
+    </form>
     <footer class="footer">
       <p>ITAROA &copy 2020</p>
     </footer>

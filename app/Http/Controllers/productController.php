@@ -60,8 +60,8 @@ class productController extends Controller
     public function show($id)
     {
         // Busco el producto con el id en cuestión
-        $product = Product::find($id);
-        return view('establishment')->with(['product' => $product]);
+        $product = Products::find($id);
+        return view('tienda')->with(['product' => $product]);
     }
 
     /**
