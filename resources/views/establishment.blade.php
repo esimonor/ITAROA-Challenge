@@ -31,6 +31,8 @@
         <div class="banner">
         </div>
         <!--Shops-->
+        @foreach($establishments as $establishment)
+        <a href="{{route('establishment.show', $establishment->id)}}">{{$establishment->name}}</a>
         <div class="row-establishments">
             <div class="card">
                 <img class="card-img" src="img/restaurant.jpg">
@@ -39,8 +41,6 @@
                 </div>
                 <h3>Restaurants</h3>
                 <p>Aliquid similique, sed reprehenderit illo consequatur harum fuga nihil</p>
-                <button type="submit"><img src="/img/gear-option.png"></button>
-                <button type="submit"><img src="/img/delete_icon.png"></button>
             </div>
 
             <div class="card">
@@ -50,8 +50,6 @@
                 </div>
                 <h3>Shops</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button type="submit"><img src="/img/gear-option.png"></button>
-                <button type="submit"><img src="/img/delete_icon.png"></button>
             </div>
             <div class="card">
                 <img class="card-img" src="img/logo.png">
@@ -60,11 +58,9 @@
                 </div>
                 <h3>Lorem ipsum</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button type="submit"><img src="/img/gear-option.png"></button>
-                <button type="submit"><img src="/img/delete_icon.png"></button>
             </div>
         </div>
-
+        @endforeach
     <footer class="footer">
       <p>ITAROA &copy 2020</p>
     </footer>

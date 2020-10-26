@@ -36,10 +36,12 @@
             <img src="/img/logo-composer-transparent3.png">
             <h3>SHOP NAME</h3>
         </div>
+
+      
         <div class="row-products">
             <div class="card">
                 <img class="card-img" src="img/como_llegar_footer1.jpg">
-                <h3>PRODUCTO</h3>
+                <h3>NOMBRE</h3>
                 <p>Aliquid similique, sed reprehenderit illo consequatur harum fuga nihil</p>
             </div>
 
@@ -54,7 +56,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
         </div>
-
+    </form>
     <footer class="footer">
       <p>ITAROA &copy 2020</p>
     </footer>

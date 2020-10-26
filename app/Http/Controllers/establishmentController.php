@@ -16,10 +16,10 @@ class establishmentController extends Controller
      */
     public function index()
     {
-        $shops = Establishments::where('type', 'shop')->get();
+        $establishments = Establishments::where('type', 'shop')->get();
         $restaurants = Establishments::where('type', 'restaurant')->get();
 
-        return view('create_product')->with(['shops' => $shops, 'restaurants' => $restaurants]);
+        return view('establishment')->with(['establishments' => $establishments, 'restaurants' => $restaurants]);
     }
 
     /**
@@ -52,11 +52,11 @@ class establishmentController extends Controller
     public function show($id)
     {
         // Busco en la bd la tienda que disponga de dicho id
-        $establishment = Establishments::find($id);
+        $establishments = Establishments::find($id);
         // Relaciono el id de la tienda con el de los productos para guardar los productos de esta tienda
         $products = Products::where('establishment_id', $id)->get();
 
-        return view('establishment')->with(['establishment' => $establishment, 'products' => $products]);
+        return view('tienda')->with(['establishments' => $establishments, 'products' => $products]);
     }
 
     /**
