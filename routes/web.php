@@ -23,7 +23,13 @@ Route::resource('establishment', 'establishmentController')->only('index', 'show
 
 Route::resource('products', 'productController')->only('show', 'store', 'update', 'destroy');
 
-/* Route::get('/establishment', function(){
-    return view("establishment");
-})->name('establishment');
-*/
+
+
+/* Route::get('/create', function(){
+    return view("create_product");
+})->name('create');
+
+Route::get('/tienda', function(){
+    return view("tienda");
+})->name('tienda'); */
+

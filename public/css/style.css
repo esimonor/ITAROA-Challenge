@@ -85,7 +85,7 @@ nav{
     margin: 1.5%;
 }
 .card-img{
-    flex: 10%;
+    flex: auto;
     padding: 1%;
     width: 50%;
 }
@@ -132,6 +132,27 @@ form{
     margin-left: 30%;
 }
 
+#shop_logo{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-top: 2%;
+    width: 95%;
+    align-items: center;
+}
+#shop_logo img{
+    width: 15%;
+}
+.row-products{
+    display: flex;
+    border:1px solid grey;
+    margin:2%;
+    width: 96%;
+}
+.row-products img{
+    width: 50%;
+    margin-left: 25%;
+}
 
 @media only screen and (max-width: 768px) {
     .container, .container2, .location{
