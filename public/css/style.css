@@ -100,22 +100,39 @@ nav{
     opacity: 0;
     transition: 0.75s;
     background-color: #f7f7f7;
-  }
-  
-  .overlay:hover {
-    opacity: 1;
-    border: 1px solid black;
-    box-shadow: 1px 2px 5px black;
-  }
+}
 
-  .shop-name {
-    margin-top: 35%;
-    color: black;
-    text-shadow:1px 2px 3px gray ;
-    font-size: 2em;
-    text-align: center;
+.overlay:hover {
+opacity: 1;
+border: 1px solid black;
+box-shadow: 1px 2px 5px black;
+}
+
+.shop-name {
+margin-top: 35%;
+color: black;
+text-shadow:1px 2px 3px gray ;
+font-size: 2em;
+text-align: center;
+font-family: Alef;
+}
+
+.add_forms, form{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+form{
+    font-size: 1.2em;
+    padding: 1%;
+    font-weight: bold;
     font-family: Alef;
-  }
+    text-align: center;
+    width: 40%;
+    margin-left: 30%;
+}
+
+
 @media only screen and (max-width: 768px) {
     .container, .container2, .location{
         width: 100%;
