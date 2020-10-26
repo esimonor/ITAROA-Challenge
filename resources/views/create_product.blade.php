@@ -28,18 +28,20 @@
         </nav>
 
         <!-- Banner -->
-        <div class="banner">
+        <div class="banner" style="filter: invert(100%);">
         </div>
 
         <!--Form-->
-        <form>
-            <span>Product name:</span><input type="text">
-            <span>Product description:</span><input type="text">
-            <span>Product price:</span><input type="number" step="0.01">
-            <span>Product stock:</span><input type="number">
-            <span>Product image:</span><input type="file">
-            <span>Product link:</span><input type="text">
-        </form>
+        <div class="add_forms">
+            <form>
+                <span>Name:</span><input type="text" placeholder="Product name">
+                <span>Description:</span><input type="text" placeholder="Product description">
+                <span>Price:</span><input type="number" step="0.01" placeholder="Product price">
+                <span>Stock:</span><input type="number" placeholder="Product stock">
+                <span>Image:</span><input type="file" placeholder="Product image">
+                <span>Link:</span><input type="text" placeholder="Product link">
+            </form>
+        </div>
     <footer class="footer">
       <p>ITAROA &copy 2020</p>
     </footer>

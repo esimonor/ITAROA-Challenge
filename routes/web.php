@@ -16,5 +16,12 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'App\Http\Controllers\establishmentController@index')->name('welcome');
 
 
-Route::resource('establishment', 'App\Http\Controllers\establishmentController')->only('index', 'show');
+// Route::resource('establishment', 'App\Http\Controllers\establishmentController')->only('index', 'show');
 
+Route::get('/establishment', function(){
+    return view("establishment");
+})->name('establishment');
+
+Route::get('/create', function(){
+    return view("create_product");
+})->name('create');
