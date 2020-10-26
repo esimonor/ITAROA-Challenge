@@ -37,7 +37,7 @@ class productController extends Controller
     public function store(Request $request)
     {
         // Creo un nuevo objeto 'producto'
-        $product = new Product;
+        $product = new Products;
         // Guardo cada parametro del formulario en el respectivo campo del objeto
         $product->name = $request->name;
         $product->description = $request->description;

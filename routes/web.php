@@ -13,15 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'App\Http\Controllers\establishmentController@index')->name('welcome');
+Route::get('/', 'establishmentController@index')->name('welcome');
 
 Route::get('create_product', 'establishmentController@form')->name('form');
 
 
 //Rutas de los controladores Resource
-Route::resource('establishment', 'App\Http\Controllers\establishmentController')->only('index', 'show');
+Route::resource('establishment', 'establishmentController')->only('index', 'show');
 
-Route::resource('products', 'ProductController')->only('show', 'store', 'update', 'destroy');
+Route::resource('products', 'productController')->only('show', 'store', 'update', 'destroy');
 
 /* Route::get('/establishment', function(){
     return view("establishment");

@@ -35,21 +35,20 @@
         <div class="add_forms">
             <form id="form" action="{{Route('products.store')}}" method="post">
                 @csrf
-                <span>Name:</span><input type="text" placeholder="Product name">
-                <span>Description:</span><input type="text" placeholder="Product description">
-                <span>Price:</span><input type="number" step="0.01" placeholder="Product price">
-                <span>Stock:</span><input type="number" placeholder="Product stock">
-                <span>Image:</span><input type="file" placeholder="Product image">
-                <span>Link:</span><input type="text" placeholder="Product link">
+                <input type="hidden" name="establishment_id" value="{{$establishment->id}}">
+                <span>Name:</span><input required type="text" placeholder="Product name" id="name" name="name">
+                <span>Description:</span><input required type="text" placeholder="Product description" id="description" name="description">
+                <span>Price:</span><input required type="number" step="0.01" placeholder="Product price" id="price" name="price">
+                <span>Stock:</span><input required type="number" placeholder="Product stock" id="stock" name="stock">
+                <span>Image:</span><input type="file" placeholder="Product image" id="photo" name="photo">
+                <span>Link:</span><input required type="text" placeholder="Product link" id="link" name="link">
+                <input id="send_data" type="submit">
             </form>
+            <script src="js/validator.js"></script>
         </div>
     <footer class="footer">
       <p>ITAROA &copy 2020</p>
     </footer>
     
-    <!-- JQUERY, POPPER, BOOTSTRAP-->
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
     </body>
 </html>
