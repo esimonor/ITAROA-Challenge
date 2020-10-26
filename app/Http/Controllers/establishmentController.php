@@ -56,7 +56,7 @@ class establishmentController extends Controller
         // Relaciono el id de la tienda con el de los productos para guardar los productos de esta tienda
         $products = Products::where('establishment_id', $id)->get();
 
-        return view('establishment')->with(['establishment' => $establishment, 'products' => $products]);
+        return view('tienda')->with(['establishment' => $establishment, 'products' => $products]);
     }
 
     /**

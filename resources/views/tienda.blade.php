@@ -35,23 +35,29 @@
         <div id="shop_logo">
             <img src="/img/logo-composer-transparent3.png">
             <h3>SHOP NAME</h3>
+            <i>08:00 - 20:00</i>
+            <i>Phone: 123456789</i>
+            
         </div>
         <div class="row-products">
             <div class="card">
                 <img class="card-img" src="img/como_llegar_footer1.jpg">
-                <h3>PRODUCTO</h3>
-                <p>Aliquid similique, sed reprehenderit illo consequatur harum fuga nihil</p>
+                <h4>PRODUCTO</h4>
+                <p>Description: Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p style="border:1px solid black">39,99€</p>
             </div>
 
             <div class="card">
                 <img class="card-img" src="https://res.cloudinary.com/css-tricks/image/fetch/w_600,q_auto,f_auto/https://cdn4.buysellads.net/uu/7/72681/1600375513-MC_CSSTricks_Logo_600x600.png">
-                <h3>PRODUCTO</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h4>PRODUCTO</h4>
+                <p>Description: Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p style="border:1px solid black">39,99€</p>
             </div>
             <div class="card">
                 <img class="card-img" src="img/logo.png">
-                <h3>Lorem ipsum</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h4>PRODUCTO</h4>
+                <p>Description: Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p style="border:1px solid black">39,99€</p>
             </div>
         </div>
 
