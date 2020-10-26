@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Products;
+use App\Models\Establishments;
 
-class prueba extends Controller
+class productController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -34,7 +36,19 @@ class prueba extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // Creo un nuevo objeto 'producto'
+        $product = new Product;
+        // Guardo cada parametro del formulario en el respectivo campo del objeto
+        $product->name = $request->name;
+        $product->description = $request->description;
+        $product->price = $request->price;
+        $product->stock = $request->stock;
+        $product->link = $request->link;
+        $product->establishment_id = $request->establishment_id;
+        // Guardo el objeto
+        $product->save();
+        // Vuelvo a la vista establishment con un mensaje de confirmación de que se ha creado correctamente el producto
+        return redirect()->route('establishment.show',$product->establishment_id);
     }
 
     /**
@@ -45,7 +59,9 @@ class prueba extends Controller
      */
     public function show($id)
     {
-        //
+        // Busco el producto con el id en cuestión
+        $product = Product::find($id);
+        return view('establishment')->with(['product' => $product]);
     }
 
     /**
@@ -68,7 +84,13 @@ class prueba extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        // Busca el producto
+        $product = Product::find($id);
+        // Actualiza el stock
+        $product->stock = $request->input('stock');
+        // Lo guarda
+        $product->save();
+        return back();
     }
 
     /**
@@ -79,6 +101,8 @@ class prueba extends Controller
      */
     public function destroy($id)
     {
-        //
+        // Destruye el producto buscandolo por id
+        Product::destroy($id);
+        return back();
     }
 }

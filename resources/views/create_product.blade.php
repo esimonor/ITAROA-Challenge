@@ -33,7 +33,8 @@
 
         <!--Form-->
         <div class="add_forms">
-            <form>
+            <form id="form" action="{{Route('products.store')}}" method="post">
+                @csrf
                 <span>Name:</span><input type="text" placeholder="Product name">
                 <span>Description:</span><input type="text" placeholder="Product description">
                 <span>Price:</span><input type="number" step="0.01" placeholder="Product price">

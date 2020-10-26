@@ -19,7 +19,7 @@ class establishmentController extends Controller
         $shops = Establishments::where('type', 'shop')->get();
         $restaurants = Establishments::where('type', 'restaurant')->get();
 
-        return view('welcome')->with(['shops' => $shops, 'restaurants' => $restaurants]);
+        return view('establishment')->with(['shops' => $shops, 'restaurants' => $restaurants]);
     }
 
     /**
@@ -67,7 +67,7 @@ class establishmentController extends Controller
      */
     public function edit($id)
     {
-        //
+        
     }
 
     /**
@@ -77,6 +77,12 @@ class establishmentController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+    public function form($id)
+    {
+        $establishment_id = $request->establishment_id;
+        $establishment = Establishments::find($establishment_id);
+        return view('create_product')->with(['establishment' => $establishment]);
+    }
     public function update(Request $request, $id)
     {
         //
