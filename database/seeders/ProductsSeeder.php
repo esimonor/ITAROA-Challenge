@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Model\Products;
+use App\Models\Products;
 
 class ProductsSeeder extends Seeder
 {
@@ -15,17 +15,17 @@ class ProductsSeeder extends Seeder
     public function run()
     {
         
-        $json = File::get('database/data/productsData.json');
+        $json = file_get_contents('database/data/productsData.json');
         $data = json_decode($json);
         foreach ($data as $obj) {
-            Product::create(array(
+            Products::create(array(
                 'name' => $obj->name,
                 'description' => $obj->description,
                 'stock' => $obj->stock,
                 'price' => $obj->price,
                 'photo' => $obj->photo,
                 'link' => $obj->link,
-                'store_id' => $obj->store_id
+                'establishment_id' => $obj->establishment_id
             ));
         }
     }
