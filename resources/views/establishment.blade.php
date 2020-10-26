@@ -44,7 +44,7 @@
                     </div>
                 </div>
                 <h3>{{$establishment->name}}</h3>
-                <p>{{$establishment->phone}}</p>
+                <p>Phone: {{$establishment->phone}}</p>
             </div>
         @endforeach
         </div>
@@ -56,7 +56,7 @@
                 <img class="card-img" src="{{$restaurant->photo}}">
                 <div class="overlay">
                     <div class="shop-name">
-                        <a href="{{route('establishment.show', $establishment->id)}}">{{$restaurant->name}}</a>
+                        <a href="{{route('establishment.show', $restaurant->id)}}">{{$restaurant->name}}</a>
                         <br>
                         <i>{{$restaurant->openAt}} - {{$restaurant->closeAt}}</i>
                     </div>
