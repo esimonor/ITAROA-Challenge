@@ -31,36 +31,41 @@
         <div class="banner">
         </div>
         <!--Shops-->
-        @foreach($establishments as $establishment)
-        <a href="{{route('establishment.show', $establishment->id)}}">{{$establishment->name}}</a>
         <div class="row-establishments">
+        @foreach($establishments as $establishment)
+        
             <div class="card">
-                <img class="card-img" src="img/restaurant.jpg">
+                <img class="card-img" src="{{$establishment->photo}}">
                 <div class="overlay">
-                    <div class="shop-name">SHOP NAME</div>
+                    <div class="shop-name">
+                        <a href="{{route('establishment.show', $establishment->id)}}">{{$establishment->name}}</a>
+                        <br>
+                        <i>{{$establishment->openAt}} - {{$establishment->closeAt}}</i>
+                    </div>
                 </div>
-                <h3>Restaurants</h3>
-                <p>Aliquid similique, sed reprehenderit illo consequatur harum fuga nihil</p>
+                <h3>{{$establishment->name}}</h3>
+                <p>{{$establishment->phone}}</p>
             </div>
-
-            <div class="card">
-                <img class="card-img" src="img/shops.jpg">
-                <div class="overlay">
-                    <div class="shop-name">SHOP NAME</div>
-                </div>
-                <h3>Shops</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-            <div class="card">
-                <img class="card-img" src="img/logo.png">
-                <div class="overlay">
-                    <div class="shop-name">SHOP NAME</div>
-                </div>
-                <h3>Lorem ipsum</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-        </div>
         @endforeach
+        </div>
+        <!--Restaurants-->
+        <div class="row-establishments">
+        @foreach($restaurants as $restaurant)
+        
+            <div class="card">
+                <img class="card-img" src="{{$restaurant->photo}}">
+                <div class="overlay">
+                    <div class="shop-name">
+                        <a href="{{route('establishment.show', $establishment->id)}}">{{$restaurant->name}}</a>
+                        <br>
+                        <i>{{$restaurant->openAt}} - {{$restaurant->closeAt}}</i>
+                    </div>
+                </div>
+                <h3>{{$restaurant->name}}</h3>
+                <p>{{$restaurant->phone}}</p>
+            </div>
+        @endforeach
+        </div>
     <footer class="footer">
       <p>ITAROA &copy 2020</p>
     </footer>
