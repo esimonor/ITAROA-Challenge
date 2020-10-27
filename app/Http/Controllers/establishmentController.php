@@ -19,7 +19,7 @@ class establishmentController extends Controller
         $establishments = Establishments::where('type', 'shop')->get();
         $restaurants = Establishments::where('type', 'restaurant')->get();
 
-        return view('welcome')->with(['establishments' => $establishments, 'restaurants' => $restaurants]);
+        return view('establishment')->with(['establishments' => $establishments, 'restaurants' => $restaurants]);
     }
 
     /**

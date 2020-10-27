@@ -44,25 +44,25 @@
         @foreach ($products as $product)
             <div class="card">
                 <form method="POST" action="{{ route('products.update',$product->id) }}" novalidate>
-                @csrf
-                @method('PUT')
-                <a href="{{$product->link}}">
-                <img class="card-img" src="{{$product->photo}}">
-                </a>
-                <h4>{{$product->name}}</h4>
-                <p>{{$product->description}}</p>
-                <label>Stock: </label><input type="number" name="stock" value="{{$product->stock}}">
-                <p style="border:1px solid black">{{$product->price}}€</p>
-                <div>
-                    <button type="submit" class="button">Modificar</button>
-                    <form action="{{ route('products.destroy',$product->id) }}" method="post">
-                            @csrf
-                            @method('DELETE')
+                    @csrf
+                    @method('PUT')
+                    <a href="{{$product->link}}">
+                    <img class="card-img" src="{{$product->photo}}">
+                    </a>
+                    <h4>{{$product->name}}</h4>
+                    <p>{{$product->description}}</p>
+                    <label>Stock: </label><input type="number" name="stock" value="{{$product->stock}}">
+                    <p style="border:1px solid black">{{$product->price}}€</p>
+                    <div>
+                    <button type="submit" class="button">Modificar</button>     
+                </form>
+                <form style="margin-left:25.5%;width:100%" action="{{ route('products.destroy',$product->id) }}" method="post">
+                    @csrf
+                    @method('DELETE')
                     <button type="submit" class="button">Eliminar</button>
-                        </form>
-                </div>
+                </form>
             </div>
-        </form>
+        </div>
         @endforeach
         </div>
     <footer class="footer">
