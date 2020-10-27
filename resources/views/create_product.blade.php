@@ -44,7 +44,7 @@
                 <span>Link:</span><input required type="text" placeholder="Product link" id="link" name="link">
                 <input id="send_data" type="submit">
             </form>
-            <script src="js/validator.js"></script>
+            <script src="{{URL::asset('js/validator.js')}}"></script>
         </div>
     <footer class="footer">
       <p>ITAROA &copy 2020</p>
