@@ -15,7 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'establishmentController@index')->name('welcome');
 
-
 Route::get('create_product', 'establishmentController@form')->name('form');
 
 Route::get('add_product/{id}', 'establishmentController@add_product')->name('add_product');

@@ -38,6 +38,17 @@ class productController extends Controller
     {
         // Creo un nuevo objeto 'producto'
         $product = new Products;
+
+        // Guardar imagen en servidor:
+
+        // Se guarda el nombre de la imagen con su extension
+        $photoName = uniqid().$request->file('photo');
+        $photoName = $photoName.'.'.$request->file('photo')->getClientOriginalExtension();
+        // Guarda el path hasta la imagen
+        $path = $request->file('photo')->storeAs($photoName, 'local');
+        //$path->move(base_path('storage\app\img'.$photoName), 'img'.$photoName);
+        $product->photo = $photoName;
+
         // Guardo cada parametro del formulario en el respectivo campo del objeto
         $product->name = $request->name;
         $product->description = $request->description;
