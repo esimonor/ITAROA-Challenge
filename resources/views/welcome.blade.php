@@ -12,19 +12,49 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Alef" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Arsenal' rel='stylesheet'>
+       
 
         <!-- Styles -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
+
     </head>
     <body>
         <!-- Navbar -->
         <nav class="navbar sticky-top navbar-light bg-light">
             <img width="10%" class="d-inline-block align-top" alt="" loading="lazy" src="img/logo.png">
-            <a href="#establishment">Establishments</a>
+            <a href ="stablishment" class="trn" data-trn-key="Establishments">Establishment</a>
             <a href="#restaurant">Restaurants</a>
             <a href="#location">Location</a>
-            <a>Language</a>
+
+            <!-- LANGUAGE SELECTOR -->
+
+            <li class="dropdown language-selector">
+              Language:  
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-close-others="true">
+                <img src="img/en.png" />
+              </a>
+              <ul class="dropdown-menu pull-right">
+                <li>
+                  <a href="#">
+                    <img src="img/esp.png" />
+                    <span class="idioma" data-name="es">Español</span>
+                  </a>
+                </li>
+                <li class="active">
+                  <a href="#">
+                    <img src="img/en.png" />
+                    <span>English</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="images/eu.png" />
+                    <span>Euskera</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
         </nav>
         <!-- Carousel -->
         <div style="border:1px solid grey;" id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
