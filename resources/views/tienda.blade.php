@@ -53,7 +53,11 @@
                 <p style="border:1px solid black">{{$product->price}}€</p>
                 <div>
                     <button type="submit" class="button">Modificar</button>
-                    <input class="button" type="button" value="delete">
+                    <form action="{{ route('products.destroy',$product->id) }}" method="post">
+                            @csrf
+                            @method('DELETE')
+                    <button type="submit" class="button">Eliminar</button>
+                        </form>
                 </div>
             </div>
         </form>

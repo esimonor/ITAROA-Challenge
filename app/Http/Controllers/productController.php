@@ -102,7 +102,7 @@ class productController extends Controller
     public function destroy($id)
     {
         // Destruye el producto buscandolo por id
-        Product::destroy($id);
+        Products::destroy($id);
         return back();
     }
 }
