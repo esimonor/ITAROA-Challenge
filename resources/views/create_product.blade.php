@@ -14,8 +14,8 @@
         <link href='https://fonts.googleapis.com/css?family=Arsenal' rel='stylesheet'>
 
         <!-- Styles -->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{URL::asset('css/style.css')}}">
+        <link rel="stylesheet" href="{{URL::asset('css/bootstrap.min.css')}}">
     </head>
     <body>
         <!-- Navbar -->
