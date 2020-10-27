@@ -39,14 +39,16 @@
             <i>Phone: {{$establishments->phone}}</i>
         </div>
 
-      
+        <i class="add_prod"><a href="{{route('add_product', $establishments->id)}}">Añadir producto</a></i>
         <div class="row-products">
         @foreach ($products as $product)
             <div class="card">
                 <form method="POST" action="{{ route('products.update',$product->id) }}" novalidate>
                 @csrf
                 @method('PUT')
+                <a href="{{$product->link}}">
                 <img class="card-img" src="{{$product->photo}}">
+                </a>
                 <h4>{{$product->name}}</h4>
                 <p>{{$product->description}}</p>
                 <label>Stock: </label><input type="number" name="stock" value="{{$product->stock}}">

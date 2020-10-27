@@ -62,7 +62,7 @@
                     </div>
                 </div>
                 <h3>{{$restaurant->name}}</h3>
-                <p>{{$restaurant->phone}}</p>
+                <p>Phone: {{$restaurant->phone}}</p>
             </div>
         @endforeach
         </div>

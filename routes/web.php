@@ -15,14 +15,16 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'establishmentController@index')->name('welcome');
 
-
 Route::get('create_product', 'establishmentController@form')->name('form');
+
+Route::get('add_product/{id}', 'establishmentController@add_product')->name('add_product');
 
 
 //Rutas de los controladores Resource
-Route::resource('establishment', 'establishmentController')->only('index', 'show');
+Route::resource('establishment', 'establishmentController')->only('index', 'show', 'add_product');
 
 Route::resource('products', 'productController')->only('show', 'store', 'update', 'destroy');
+
 
 
 

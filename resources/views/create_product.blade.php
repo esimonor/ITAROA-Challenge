@@ -14,8 +14,8 @@
         <link href='https://fonts.googleapis.com/css?family=Arsenal' rel='stylesheet'>
 
         <!-- Styles -->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{URL::asset('css/style.css')}}">
+        <link rel="stylesheet" href="{{URL::asset('css/bootstrap.min.css')}}">
     </head>
     <body>
         <!-- Navbar -->
@@ -33,7 +33,7 @@
 
         <!--Form-->
         <div class="add_forms">
-            <form id="form" action="{{Route('products.store')}}" method="post">
+            <form id="form" action="{{Route('products.store')}}" method="post" enctype="multipart/form-data">
                 @csrf
                 <input type="hidden" name="establishment_id" value="{{$establishment->id}}">
                 <span>Name:</span><input required type="text" placeholder="Product name" id="name" name="name">

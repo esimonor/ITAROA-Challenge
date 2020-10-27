@@ -1,6 +1,11 @@
 *{
     scroll-behavior: smooth;
 }
+a{
+    text-decoration: none;
+    color: black;
+    margin-right: 17%;
+}
 nav{
     font-family:Alef;
 }
@@ -165,6 +170,12 @@ font-family: Alef;
 .button:hover {
 background-color: #000;
 color: white;
+}
+
+.add_prod a{
+    border:1px solid darkgray; 
+    box-shadow: 2px 2px 105px darkgray;
+    margin-left:2%;
 }
 
 @media only screen and (max-width: 768px) {

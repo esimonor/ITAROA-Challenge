@@ -83,6 +83,12 @@ class establishmentController extends Controller
         $establishment = Establishments::find($establishment_id);
         return view('create_product')->with(['establishment' => $establishment]);
     }
+
+    public function add_product($id)
+    {
+        $establishment = Establishments::find($id);
+        return view('create_product')->with(['establishment' => $establishment]);
+    }
     public function update(Request $request, $id)
     {
         //
