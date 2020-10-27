@@ -43,18 +43,22 @@
         <div class="row-products">
         @foreach ($products as $product)
             <div class="card">
+                <form method="POST" action="{{ route('products.update',$product->id) }}" novalidate>
+                @csrf
+                @method('PUT')
                 <img class="card-img" src="{{$product->photo}}">
                 <h4>{{$product->name}}</h4>
                 <p>{{$product->description}}</p>
+                <label>Stock: </label><input type="number" name="stock" value="{{$product->stock}}">
                 <p style="border:1px solid black">{{$product->price}}€</p>
                 <div>
-                    <input class="button" type="button" value="Modify">
+                    <button type="submit" class="validar">Modificar</button>
                     <input class="button" type="button" value="delete">
                 </div>
             </div>
+        </form>
         @endforeach
         </div>
-    </form>
     <footer class="footer">
       <p>ITAROA &copy 2020</p>
     </footer>

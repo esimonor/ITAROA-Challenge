@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'establishmentController@index')->name('welcome');
 
+
 Route::get('create_product', 'establishmentController@form')->name('form');
 
 
@@ -25,11 +26,5 @@ Route::resource('products', 'productController')->only('show', 'store', 'update'
 
 
 
-/* Route::get('/create', function(){
-    return view("create_product");
-})->name('create');
 
-Route::get('/tienda', function(){
-    return view("tienda");
-})->name('tienda'); */
 

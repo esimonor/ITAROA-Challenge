@@ -85,7 +85,7 @@ class productController extends Controller
     public function update(Request $request, $id)
     {
         // Busca el producto
-        $product = Product::find($id);
+        $product = Products::find($id);
         // Actualiza el stock
         $product->stock = $request->input('stock');
         // Lo guarda

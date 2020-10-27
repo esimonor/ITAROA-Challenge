@@ -21,9 +21,9 @@
         <!-- Navbar -->
         <nav class="navbar sticky-top navbar-light bg-light">
             <img width="10%" class="d-inline-block align-top" alt="" loading="lazy" src="img/logo.png">
-            <a href="establishment">Shops</a>
+            <a href="#establishment">Establishments</a>
             <a href="#restaurant">Restaurants</a>
-            <a>Contact</a>
+            <a href="#location">Location</a>
             <a>Language</a>
         </nav>
         <!-- Carousel -->
@@ -70,7 +70,7 @@
             </div>
         </div>
         <!--Location-->
-        <div class="location">
+        <div class="location" id="location">
             <div class="texto">
                 <div>
                     <h4>Horario Comercial</h4>
