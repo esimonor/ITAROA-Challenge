@@ -20,7 +20,7 @@
     <body>
         <!-- Navbar -->
         <nav class="navbar sticky-top navbar-light bg-light">
-            <img width="10%" class="d-inline-block align-top" alt="" loading="lazy" src="img/logo.png">
+            <img width="10%" class="d-inline-block align-top" alt="" loading="lazy" src="{{URL::asset('img/logo.png')}}">
             <a>Shops</a>
             <a>Restaurants</a>
             <a>Contact</a>
@@ -33,7 +33,7 @@
 
         <!--Logo and products-->
         <div id="shop_logo">
-            <img src="{{$establishments->photo}}">
+            <img src="{{URL::asset($establishments->photo)}}">
             <h3>{{$establishments->name}}</h3>
             <i>{{$establishments->openAt}} - {{$establishments->closeAt}}</i>
             <i>Phone: {{$establishments->phone}}</i>
@@ -47,6 +47,10 @@
                 <h4>{{$product->name}}</h4>
                 <p>{{$product->description}}</p>
                 <p style="border:1px solid black">{{$product->price}}€</p>
+                <div>
+                    <input class="button" type="button" value="Modify">
+                    <input class="button" type="button" value="delete">
+                </div>
             </div>
         @endforeach
         </div>
