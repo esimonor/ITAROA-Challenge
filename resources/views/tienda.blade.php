@@ -52,7 +52,7 @@
                 <label>Stock: </label><input type="number" name="stock" value="{{$product->stock}}">
                 <p style="border:1px solid black">{{$product->price}}€</p>
                 <div>
-                    <button type="submit" class="validar">Modificar</button>
+                    <button type="submit" class="button">Modificar</button>
                     <input class="button" type="button" value="delete">
                 </div>
             </div>

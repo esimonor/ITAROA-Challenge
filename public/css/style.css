@@ -122,7 +122,7 @@ font-family: Alef;
     flex-direction: column;
     align-content: center;
 }
-form{
+#form{
     font-size: 1.2em;
     padding: 1%;
     font-weight: bold;
