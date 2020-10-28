@@ -11,33 +11,6 @@ nav{
     font-family:Alef;
 }
 
-/* ESTILOS DE IDIOMAS  */
-#idiomas{
-    background-color: rgba(255, 255, 255,.7);
-    
-}
-nav ul{
-    display: flex;
-    flex-direction: row;
-}
-li{
-    list-style: none;
-}
-#idiomas ul{
-    justify-content: flex-end;
-    
-}
-#idiomas li{
-    margin-right: 7px;
-    color: black;
-    list-style: none;
-
-}
-#idiomas li:hover{
-    color: rgba(14, 120, 27, 1);
-    
-}
-/*FIN ESTILOS DE IDIOMAS */
 
 /* Contenedores de colores en welcome*/
 
@@ -94,6 +67,7 @@ li{
 }
 /* footer */
 .footer{
+    width: 100%;
     align-content: center;
     text-align: center;
     border-top: 2px solid gray;
@@ -173,6 +147,7 @@ font-family: Alef;
     display: flex;
     flex-direction: column;
     align-content: center;
+    width: 100%;
 }
 #form{
     font-size: 1.2em;
@@ -204,7 +179,6 @@ font-family: Alef;
 }
 .row-products img{
     width: 50%;
-    margin-left: 25%;
 }
 /* Los botones de modificar/eliminar */
 .button {
@@ -216,8 +190,8 @@ font-family: Alef;
     transition: 0.75s;
   }
 .button:hover {
-background-color: #000;
-color: white;
+    background-color: #000;
+    color: white;
 }
 /* El enlace de para añadir productos*/
 .add_prod a{
@@ -242,7 +216,7 @@ color: white;
     .card{
         width: 95%;
     }
-    .card-img{
+    .card-img{  
         width: 20%;
     }
   }

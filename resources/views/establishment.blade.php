@@ -23,19 +23,16 @@
             <a style="width:10%"href="{{URL::route('welcome')}}">
                 <img width="100%" class="d-inline-block align-top" alt="" loading="lazy" src="{{URL::asset('img/logo.png')}}">
             </a>
-            <a class="nav_link" href ="establishment">Establishment</a>
-            <a class="nav_link" href="#restaurant">Restaurants</a>
-            <a class="nav_link" href="#location">Location</a>
+            <a href ="establishment" class="trn nav_link" data-trn-key="link1">Establishment</a>
+            <a href="#restaurant" class="trn nav_link" data-trn-key="link2">Restaurants</a>
+            <a href="#location" class="trn nav_link" data-trn-key="link3">Location</a>
             <!-- LANGUAGE SELECTOR -->
-            <div id="idiomas">
-                <ul>
-                    <li class="idioma" data-name="en">En</li>
-                    <li class="idioma" data-name="eu">Eu</li>
-                    <li class="idioma" data-name="es">Es</li>
-                
-                </ul>
-            </div>
-        </nav>
+
+            <select class="selectpicker" data-width="fit">
+            <option class="idioma" data-name="en"><img src="{{URL::asset('img/logo.png')}}"></img>English</option>
+            <option class="idioma" data-name="es"><img src="/img/es.png"></img>Español</option>
+            <option class="idioma" data-name="eu"data-content='<span class="flag-icon flag-icon-mx"></span> Euskera'>Euskera</option>
+            </select>
 
         <!-- Banner -->
         <div class="banner">

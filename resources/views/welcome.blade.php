@@ -17,6 +17,7 @@
         <!-- Styles -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
+
         <!--Scripts -->
         <script src="js/jquery-3.5.1.min.js"></script>
         <script type="text/javascript" src="js/Traduccion/jquery.translate.js"></script>
@@ -29,20 +30,16 @@
             <a style="width:10%"href="{{URL::route('welcome')}}">
             <img width="100%" class="d-inline-block align-top" alt="" loading="lazy" src="img/logo.png">
             </a>
-            <a class="nav_link" href ="itaroa/establishment">Establishment</a>
-            <a class="nav_link" href="#restaurant">Restaurants</a>
-            <a class="nav_link" href="#location">Location</a>
-
+            <a href ="itaroa/establishment" class="trn nav_link" data-trn-key="link1">Establishment</a>
+            <a href="#restaurant" class="trn nav_link" data-trn-key="link2">Restaurants</a>
+            <a href="#location" class="trn nav_link" data-trn-key="link3">Location</a>
             <!-- LANGUAGE SELECTOR -->
 
-            <div id="idiomas">
-                <ul>
-                    <li class="idioma" data-name="en">En</li>
-                    <li class="idioma" data-name="eu">Eu</li>
-                    <li class="idioma" data-name="es">Es</li>
-                
-                </ul>
-            </div>
+            <select class="selectpicker" data-width="fit">
+            <option class="idioma" data-name="en"><img src="{{URL::asset('img/logo.png')}}"></img>English</option>
+            <option class="idioma" data-name="es"><img src="/img/es.png"></img>Español</option>
+            <option class="idioma" data-name="eu"data-content='<span class="flag-icon flag-icon-mx"></span> Euskera'>Euskera</option>
+            </select>
         </nav>
         <!-- Carousel -->
         <div style="border:1px solid grey;" id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -76,44 +73,44 @@
         <div class="container">
             <div class="texto">
                 <h3 class="trn" data-trn-key="Establishments">Restaurants</h3>
-                <p>Wide varaiety of quality restaurants are waiting to serve you a delicious meal.</p>
+                <p class="trn" data-trn-key="Desc1">Wide varaiety of quality restaurants are waiting to serve you a delicious meal.</p>
             </div>
                 <img class="imagen" src="img/restaurant.jpg">
         </div>
         <div class="container2">
                 <img class="imagen" src="img/shops.jpg">
             <div class="texto">
-                <h3>Shops</h3>
-                <p>Lots of shops for all your needs, from groceries to clothing, and all of that at an afordable product.</p>
+                <h3 class="trn" data-trn-key="Shops">Shops</h3>
+                <p class="trn" data-trn-key="Desc2">Lots of shops for all your needs, from groceries to clothing, and all of that at an afordable product.</p>
             </div>
         </div>
         <!--Location-->
         <div class="location" id="location">
             <div class="texto">
                 <div>
-                    <h4>Horario Comercial</h4>
-                    <div>Lunes a sábados, de 10:00 a 22:00h
+                    <h4 class="trn" data-trn-key="Hcomercial">Business hours</h4>
+                    <div class="trn" data-trn-key="Horario1">Monday to Saturdays, from 10:00 to 22:00h
                     </div>
                 </div>
                 <div>
-                    <h4>Horario Hipercor</h4>
-                    <div>Lunes a sábados, de 10:00 a 22:00h
+                    <h4 class="trn" data-trn-key="Hhipercor">Hipercor schedule</h4>
+                    <div class="trn" data-trn-key="Horario2">Monday to Saturdays, from 10:00 to 22:00h
                     </div>
                 </div>
                 <div>
-                    <h4>Horario Restauración</h4>
+                    <h4 class="trn" data-trn-key="Hrestauracion">Restoration Hours</h4>
                     <div>
                     <ul>
-                        <li>Domingos a jueves, de 12:00 a 23:00 h</li><li>Viernes, sábados y vísperas de festivos, de 12:00 a 00:00 h</li>
+                        <li class="trn" data-trn-key="Horario3">Sunday to Thursday, from 12:00 to 23:00</li><li class="trn" data-trn-key="Horario4">Friday, Saturday and the eve of holidays, from 12:00 to 00:00</li>
                     </ul>
                     </div>
                 </div>
                 <div >
-                    <h4>Horario Ocio</h4>
+                    <h4 class="trn" data-trn-key="Hocio">Leisure Hours</h4>
                     <div>
                     <ul>
-                        <li>Cines: Según programación</li>
-                        <li>Citypark, desde 16:00h. Karting desde 17:00h. (sábados y domingos desde 12:00h)</li>
+                        <li class="trn" data-trn-key="Cines">Cinemas: According to programming</li>
+                        <li class="trn" data-trn-key="Citypark">Citypark, from 4:00 p.m. Karting from 5:00 p.m. (Saturdays and Sundays from 12: 00h)</li>
                     </ul>
                     </div>
                 </div>
