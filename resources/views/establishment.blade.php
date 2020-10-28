@@ -20,7 +20,7 @@
     <body>
         <!-- Navbar -->
         <nav class="navbar sticky-top navbar-light bg-light">
-            <a style="width:10%"href="{{URL::route('welcome')}}">
+        <a style="width:10%"href="{{URL::route('welcome')}}">
                 <img width="100%" class="d-inline-block align-top" alt="" loading="lazy" src="{{URL::asset('img/logo.png')}}">
             </a>
             <a href ="establishment" class="trn nav_link" data-trn-key="link1">Establishment</a>
