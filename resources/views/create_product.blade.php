@@ -20,12 +20,18 @@
     <body>
         <!-- Navbar -->
         <nav class="navbar sticky-top navbar-light bg-light">
-            <img width="10%" class="d-inline-block align-top" alt="" loading="lazy" src="img/logo.png">
-            <a>Shops</a>
-            <a>Restaurants</a>
-            <a>Contact</a>
-            <a>Languaje</a>
-        </nav>
+            <a style="width:10%"href="{{URL::route('welcome')}}">
+                <img width="100%" class="d-inline-block align-top" alt="" loading="lazy" src="{{URL::asset('img/logo.png')}}">
+            </a>
+            <a href ="{{URL::route('welcome')}}\itaroa\establishment" class="trn nav_link" data-trn-key="link1">Establishment</a>
+            <a href="#restaurant" class="trn nav_link" data-trn-key="link2">Restaurants</a>
+            <a href="#location" class="trn nav_link" data-trn-key="link3">Location</a>
+            <!-- LANGUAGE SELECTOR -->
+            <select class="selectpicker" data-width="fit">
+            <option class="idioma" data-name="en"><img src="{{URL::asset('img/logo.png')}}"></img>English</option>
+            <option class="idioma" data-name="es"><img src="/img/es.png"></img>Español</option>
+            <option class="idioma" data-name="eu"data-content='<span class="flag-icon flag-icon-mx"></span> Euskera'>Euskera</option>
+            </select>
 
         <!-- Banner -->
         <div class="banner" style="filter: invert(100%);">

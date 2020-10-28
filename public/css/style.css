@@ -1,10 +1,11 @@
 *{
     scroll-behavior: smooth;
 }
-a{
+.nav_link{
+    float: left;
     text-decoration: none;
     color: black;
-    margin-right: 17%;
+    margin-right: 10%;
 }
 nav{
     font-family:Alef;
@@ -66,6 +67,7 @@ nav{
 }
 /* footer */
 .footer{
+    width: 100%;
     align-content: center;
     text-align: center;
     border-top: 2px solid gray;
@@ -145,6 +147,7 @@ font-family: Alef;
     display: flex;
     flex-direction: column;
     align-content: center;
+    width: 100%;
 }
 #form{
     font-size: 1.2em;
@@ -176,7 +179,6 @@ font-family: Alef;
 }
 .row-products img{
     width: 50%;
-    margin-left: 25%;
 }
 /* Los botones de modificar/eliminar */
 .button {
@@ -188,8 +190,8 @@ font-family: Alef;
     transition: 0.75s;
   }
 .button:hover {
-background-color: #000;
-color: white;
+    background-color: #000;
+    color: white;
 }
 /* El enlace de para añadir productos*/
 .add_prod a{
@@ -214,7 +216,7 @@ color: white;
     .card{
         width: 95%;
     }
-    .card-img{
+    .card-img{  
         width: 20%;
     }
   }

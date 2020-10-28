@@ -20,16 +20,18 @@
     <body>
         <!-- Navbar -->
         <nav class="navbar sticky-top navbar-light bg-light">
-            <img width="10%" class="d-inline-block align-top" alt="" loading="lazy" src="{{URL::asset('img/logo.png')}}">
-            <a>Shops</a>
-            <a>Restaurants</a>
-            <a>Contact</a>
-            <a>Languaje</a>
-        </nav>
-
-        <!-- Banner 
-        <div class="banner">
-        </div>-->
+            <a style="width:10%"href="{{URL::route('welcome')}}">
+                <img width="100%" class="d-inline-block align-top" alt="" loading="lazy" src="{{URL::asset('img/logo.png')}}">
+            </a>
+            <a href ="establishment" class="trn nav_link" data-trn-key="link1">Establishment</a>
+            <a href="#restaurant" class="trn nav_link" data-trn-key="link2">Restaurants</a>
+            <a href="#location" class="trn nav_link" data-trn-key="link3">Location</a>
+            <!-- LANGUAGE SELECTOR -->
+            <select class="selectpicker" data-width="fit">
+            <option class="idioma" data-name="en"><img src="{{URL::asset('img/logo.png')}}"></img>English</option>
+            <option class="idioma" data-name="es"><img src="/img/es.png"></img>Español</option>
+            <option class="idioma" data-name="eu"data-content='<span class="flag-icon flag-icon-mx"></span> Euskera'>Euskera</option>
+            </select>
 
         <!--Logo and products-->
         <div id="shop_logo">
@@ -39,7 +41,7 @@
             <i>Phone: {{$establishments->phone}}</i>
         </div>
 
-        <i class="add_prod"><a href="{{route('add_product', $establishments->id)}}">Añadir producto</a></i>
+        <i style="width:100%" class="add_prod"><a  href="{{route('add_product', $establishments->id)}}">Añadir producto</a></i>
         <div class="row-products">
         
         @foreach ($products as $product)
@@ -57,10 +59,10 @@
                     <div>
                     <button type="submit" class="button">Modificar</button>     
                 </form>
-                <form style="margin-left:25.5%;width:100%" action="{{ route('products.destroy',$product->id) }}" method="post">
+                <form style="margin-left:25.5%;width:90%" action="{{ route('products.destroy',$product->id) }}" method="post">
                     @csrf
                     @method('DELETE')
-                    <button type="submit" class="button">Eliminar</button>
+                    <button type="submit" style="width:50%" class="button">Eliminar</button>
                 </form>
             </div>
         </div>

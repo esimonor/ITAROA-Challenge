@@ -28,11 +28,12 @@
     <body>
         <!-- Navbar -->
         <nav class="navbar sticky-top navbar-light bg-light">
-            <img width="10%" class="d-inline-block align-top" alt="" loading="lazy" src="img/logo.png">
-            <a href ="itaroa/establishment" class="trn" data-trn-key="link1">Establishment</a>
-            <a href="#restaurant" class="trn" data-trn-key="link2">Restaurants</a>
-            <a href="#location" class="trn" data-trn-key="link3">Location</a>
-
+            <a style="width:10%"href="{{URL::route('welcome')}}">
+            <img width="100%" class="d-inline-block align-top" alt="" loading="lazy" src="img/logo.png">
+            </a>
+            <a href ="itaroa/establishment" class="trn nav_link" data-trn-key="link1">Establishment</a>
+            <a href="#restaurant" class="trn nav_link" data-trn-key="link2">Restaurants</a>
+            <a href="#location" class="trn nav_link" data-trn-key="link3">Location</a>
             <!-- LANGUAGE SELECTOR -->
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler77" aria-controls="" aria-expanded="false" aria-label="Toggle navigation"> 
