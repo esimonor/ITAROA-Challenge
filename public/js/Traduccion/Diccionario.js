@@ -16,7 +16,7 @@ jQuery(document).ready(function($) {
         "link3":{
             en:"Location",
             eu:"Kokapena",
-            es:"Localización"			
+            es:"Localización"		
         },
         "Establishments":{
             en:"Establishments",
