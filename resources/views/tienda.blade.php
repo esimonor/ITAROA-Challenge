@@ -41,6 +41,7 @@
 
         <i class="add_prod"><a href="{{route('add_product', $establishments->id)}}">Añadir producto</a></i>
         <div class="row-products">
+        
         @foreach ($products as $product)
             <div class="card">
                 <form method="POST" action="{{ route('products.update',$product->id) }}" novalidate>
