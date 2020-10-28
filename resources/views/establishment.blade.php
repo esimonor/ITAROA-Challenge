@@ -20,7 +20,7 @@
     <body>
         <!-- Navbar -->
         <nav class="navbar sticky-top navbar-light bg-light">
-            <img width="10%" class="d-inline-block align-top" alt="" loading="lazy" src="img/logo.png">
+            <img width="10%" class="d-inline-block align-top" alt="" loading="lazy" src="{{URL::asset('img/logo.png')}}">
             <a>Shops</a>
             <a>Restaurants</a>
             <a>Contact</a>
