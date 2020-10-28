@@ -19,7 +19,7 @@ class establishmentController extends Controller
         $establishments = Establishments::where('type', 'shop')->get();
         $restaurants = Establishments::where('type', 'restaurant')->get();
 
-        return view('establishment')->with(['establishments' => $establishments, 'restaurants' => $restaurants]);
+        return view('welcome')->with(['establishments' => $establishments, 'restaurants' => $restaurants]);
     }
 
     /**
@@ -84,11 +84,14 @@ class establishmentController extends Controller
         return view('create_product')->with(['establishment' => $establishment]);
     }
 
+    //Funcion para que nos lleve a la pagina de añadir un producto
     public function add_product($id)
     {
         $establishment = Establishments::find($id);
         return view('create_product')->with(['establishment' => $establishment]);
     }
+
+
     public function update(Request $request, $id)
     {
         //

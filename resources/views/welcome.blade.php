@@ -17,44 +17,29 @@
         <!-- Styles -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/jquery-3.5.1.min.js"></script>
+        <script type="text/javascript" src="js/Traduccion/jquery.translate.js"></script>
+        <script type="text/javascript" src="js/Traduccion/Diccionario.js"></script>
 
     </head>
     <body>
         <!-- Navbar -->
         <nav class="navbar sticky-top navbar-light bg-light">
             <img width="10%" class="d-inline-block align-top" alt="" loading="lazy" src="img/logo.png">
-            <a href ="stablishment" class="trn" data-trn-key="Establishments">Establishment</a>
+            <a href="Establishment" >Establishment</a>
             <a href="#restaurant">Restaurants</a>
             <a href="#location">Location</a>
 
             <!-- LANGUAGE SELECTOR -->
 
-            <li class="dropdown language-selector">
-              Language:  
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-close-others="true">
-                <img src="img/en.png" />
-              </a>
-              <ul class="dropdown-menu pull-right">
-                <li>
-                  <a href="#">
-                    <img src="img/esp.png" />
-                    <span class="idioma" data-name="es">Español</span>
-                  </a>
-                </li>
-                <li class="active">
-                  <a href="#">
-                    <img src="img/en.png" />
-                    <span>English</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="images/eu.png" />
-                    <span>Euskera</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
+            <div id="idiomas">
+                <ul>
+                    <li class="idioma" data-name="en">En</li>
+                    <li class="idioma" data-name="eu">Eu</li>
+                    <li class="idioma" data-name="es">Es</li>
+                
+                </ul>
+            </div>
         </nav>
         <!-- Carousel -->
         <div style="border:1px solid grey;" id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -87,7 +72,7 @@
         <!--Image with text section-->
         <div class="container">
             <div class="texto">
-                <h3>Restaurants</h3>
+                <h3 class="trn" data-trn-key="Establishments">Restaurants</h3>
                 <p>Wide varaiety of quality restaurants are waiting to serve you a delicious meal.</p>
             </div>
                 <img class="imagen" src="img/restaurant.jpg">
