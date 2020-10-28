@@ -14,8 +14,8 @@
         <link href='https://fonts.googleapis.com/css?family=Arsenal' rel='stylesheet'>
 
         <!-- Styles -->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{URL::asset('css/style.css')}}">
+        <link rel="stylesheet" href="{{URL::asset('css/bootstrap.min.css')}}">
     </head>
     <body>
         <!-- Navbar -->
@@ -35,7 +35,7 @@
         @foreach($establishments as $establishment)
         
             <div class="card">
-                <img class="card-img" src="{{$establishment->photo}}">
+                <img class="card-img" src="/{{$establishment->photo}}">
                 <div class="overlay">
                     <div class="shop-name">
                         <a href="{{route('establishment.show', $establishment->id)}}">{{$establishment->name}}</a>
@@ -53,7 +53,7 @@
         @foreach($restaurants as $restaurant)
         
             <div class="card">
-                <img class="card-img" src="{{$restaurant->photo}}">
+                <img class="card-img" src="/{{$restaurant->photo}}">
                 <div class="overlay">
                     <div class="shop-name">
                         <a href="{{route('establishment.show', $restaurant->id)}}">{{$restaurant->name}}</a>
