@@ -17,6 +17,7 @@
         <!-- Styles -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!--Scripts -->
         <script src="js/jquery-3.5.1.min.js"></script>
         <script type="text/javascript" src="js/Traduccion/jquery.translate.js"></script>
         <script type="text/javascript" src="js/Traduccion/Diccionario.js"></script>
@@ -26,7 +27,9 @@
         <!-- Navbar -->
         <nav class="navbar sticky-top navbar-light bg-light">
             <img width="10%" class="d-inline-block align-top" alt="" loading="lazy" src="img/logo.png">
-            <a href="Establishment" >Establishment</a>
+
+            <a href ="itaroa/establishment">Establishment</a>
+
             <a href="#restaurant">Restaurants</a>
             <a href="#location">Location</a>
 

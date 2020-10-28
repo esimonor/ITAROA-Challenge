@@ -38,6 +38,8 @@ li{
 }
 /*FIN ESTILOS DE IDIOMAS */
 
+/* Contenedores de colores en welcome*/
+
 .container{
     border:1px solid grey;
     margin:2%;
@@ -89,13 +91,14 @@ li{
 #horarios{
     margin:2%;
 }
+/* footer */
 .footer{
     align-content: center;
     text-align: center;
     border-top: 2px solid gray;
     font-family: Arsenal;
 }
-
+/* Banner de la pagina establishment y add_product*/
 .banner{
     width: 100%;
     height: 300px;
@@ -104,7 +107,7 @@ li{
 .banner:hover{
    filter: invert(100%);
 }
-
+/* Filas de establecimientos*/
 .row-establishments{
     display: flex;
     border:1px solid grey;
@@ -112,6 +115,7 @@ li{
     width: 95%;
 
 }
+/* La informacion de dentro de esas filas*/
 .card{
     text-align: center;
     float: left;
@@ -123,6 +127,7 @@ li{
     padding: 1%;
     width: 50%;
 }
+/* El overlay que aparece al hacer hover*/
 .overlay {
     position: absolute;
     top: 0;
@@ -135,11 +140,23 @@ li{
     transition: 0.75s;
     background-color: #f7f7f7;
 }
-
+.overlay a{
+    text-decoration: none;
+    color: black;
+}
+.overlay a:hover{
+    text-decoration: underline;
+    color: black;
+}
+.overlay i{
+    font-size: 0.7em;
+    text-align: center;
+}
 .overlay:hover {
-opacity: 1;
-border: 1px solid black;
-box-shadow: 1px 2px 5px black;
+    text-align: center;
+    opacity: 1;
+    border: 1px solid black;
+    box-shadow: 1px 2px 5px black;
 }
 
 .shop-name {
@@ -150,7 +167,7 @@ font-size: 2em;
 text-align: center;
 font-family: Alef;
 }
-
+/* Estilos de formularios*/
 .add_forms, form{
     display: flex;
     flex-direction: column;
@@ -165,7 +182,7 @@ font-family: Alef;
     width: 40%;
     margin-left: 30%;
 }
-
+/* Estilos de cada tienda con sus productos */
 #shop_logo{
     display: flex;
     flex-direction: column;
@@ -177,6 +194,7 @@ font-family: Alef;
 #shop_logo img{
     width: 15%;
 }
+/* Filas de los productos*/
 .row-products{
     display: flex;
     border:1px solid grey;
@@ -187,7 +205,7 @@ font-family: Alef;
     width: 50%;
     margin-left: 25%;
 }
-
+/* Los botones de modificar/eliminar */
 .button {
     background-color: white;
     color: black;
@@ -200,13 +218,13 @@ font-family: Alef;
 background-color: #000;
 color: white;
 }
-
+/* El enlace de para añadir productos*/
 .add_prod a{
     border:1px solid darkgray; 
     box-shadow: 2px 2px 105px darkgray;
     margin-left:2%;
 }
-
+/* MediaQuery responsive*/
 @media only screen and (max-width: 768px) {
     .container, .container2, .location{
         width: 100%;

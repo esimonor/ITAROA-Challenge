@@ -20,6 +20,17 @@ class establishmentController extends Controller
         $restaurants = Establishments::where('type', 'restaurant')->get();
 
         return view('welcome')->with(['establishments' => $establishments, 'restaurants' => $restaurants]);
+
+    }
+
+/* Funcion que nos redirige a establishments */
+    public function prueba($prueba)
+    {
+        $establishments = Establishments::where('type', 'shop')->get();
+        $restaurants = Establishments::where('type', 'restaurant')->get();
+
+        return view('establishment')->with(['establishments' => $establishments, 'restaurants' => $restaurants]);
+
     }
 
     /**
@@ -49,6 +60,7 @@ class establishmentController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+    
     public function show($id)
     {
         // Busco en la bd la tienda que disponga de dicho id
