@@ -26,12 +26,12 @@
     <body>
         <!-- Navbar -->
         <nav class="navbar sticky-top navbar-light bg-light">
-            <img width="10%" class="d-inline-block align-top" alt="" loading="lazy" src="img/logo.png">
-
-            <a href ="itaroa/establishment">Establishment</a>
-
-            <a href="#restaurant">Restaurants</a>
-            <a href="#location">Location</a>
+            <a style="width:10%"href="{{URL::route('welcome')}}">
+            <img width="100%" class="d-inline-block align-top" alt="" loading="lazy" src="img/logo.png">
+            </a>
+            <a class="nav_link" href ="itaroa/establishment">Establishment</a>
+            <a class="nav_link" href="#restaurant">Restaurants</a>
+            <a class="nav_link" href="#location">Location</a>
 
             <!-- LANGUAGE SELECTOR -->
 

@@ -1,10 +1,11 @@
 *{
     scroll-behavior: smooth;
 }
-a{
+.nav_link{
+    float: left;
     text-decoration: none;
     color: black;
-    margin-right: 17%;
+    margin-right: 10%;
 }
 nav{
     font-family:Alef;
