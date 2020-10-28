@@ -17,6 +17,8 @@
         <!-- Styles -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/4.5.3/css/flag-icon.min.css" rel="stylesheet">
+
 
         <!--Scripts -->
         <script src="js/jquery-3.5.1.min.js"></script>
@@ -37,7 +39,7 @@
 
             <select class="selectpicker" data-width="fit">
             <option class="idioma" data-name="en"><img src="{{URL::asset('img/logo.png')}}"></img>English</option>
-            <option class="idioma" data-name="es"><img src="/img/es.png"></img>Español</option>
+            <option class="idioma" data-name="es" data-content='<span class="flag-icon flag-icon-mx"></span> English'></option>
             <option class="idioma" data-name="eu"data-content='<span class="flag-icon flag-icon-mx"></span> Euskera'>Euskera</option>
             </select>
         </nav>
