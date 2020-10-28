@@ -42,7 +42,7 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink78"> 
                         <a class="dropdown-item idioma" data-name="en"><span class="flag-icon flag-icon-gb"></span> English</a> 
                         <a class="dropdown-item idioma" data-name="es"><span class="flag-icon flag-icon-es"></span> Español</a> 
-                        <a class="dropdown-item idioma" data-name="eus"><span class="flag-icon flag-icon-ru"></span> Euskera</a> 
+                        <a class="dropdown-item idioma" data-name="eu"><span class="flag-icon flag-icon-ru"></span> Euskera</a> 
                     </div>
                 </div>
             </button> 
