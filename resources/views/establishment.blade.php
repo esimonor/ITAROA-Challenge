@@ -31,7 +31,7 @@
             </a>
             <a href ="itaroa/establishment" class="trn nav_link" data-trn-key="link1">Establishment</a>
             <a href="#restaurant" class="trn nav_link" data-trn-key="link2">Restaurants</a>
-            <a href="#location" class="trn nav_link" data-trn-key="link3">Location</a>
+            <a href="{{URL::route('welcome')}}#location" class="trn nav_link" data-trn-key="link3">Location</a>
             <!-- LANGUAGE SELECTOR -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler77" aria-controls="" aria-expanded="false" aria-label="Toggle navigation"> 
                 <div class="dropdown" style="display: inline-block;">
@@ -49,7 +49,7 @@
         <div class="banner">
         </div>
         <!--Shops-->
-        <h2 style="margin-left:45%;margin-top:2%;font-wheight:bold;text-shadow:2px 2px 2px black">Shops</h2>
+        <h2 id="shops"class="trn" data-trn-key="Shops">Shops</h2>
         <div class="row-establishments">
         @foreach($establishments as $establishment)
         
@@ -68,6 +68,7 @@
         @endforeach
         </div>
         <!--Restaurants-->
+        <h2 id="restaurants"class="trn" data-trn-key="Restaurants">Restaurants</h2>
         <div class="row-establishments">
         @foreach($restaurants as $restaurant)
         

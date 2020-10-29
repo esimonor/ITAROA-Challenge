@@ -89,6 +89,8 @@ jQuery(document).ready(function($) {
             es:"Citypark, desde 16:00h. Karting desde 17:00h. (sábados y domingos desde 12:00h)"			
         },
 
+        
+
 
         }
 

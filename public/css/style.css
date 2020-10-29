@@ -82,6 +82,17 @@ nav{
 .banner:hover{
    filter: invert(100%);
 }
+
+h2{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0 10px 0;
+    font-family: Italianno;
+    font-size: 2.5em;
+    color: #ed5113;
+    text-shadow: 2px 2px 2px black; 
+    text-transform: uppercase;
+}
 /* Filas de establecimientos*/
 .row-establishments{
     display: flex;

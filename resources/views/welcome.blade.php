@@ -31,8 +31,10 @@
             <a style="width:10%"href="{{URL::route('welcome')}}">
             <img width="100%" class="d-inline-block align-top" alt="" loading="lazy" src="img/logo.png">
             </a>
-            <a href ="itaroa/establishment" class="trn nav_link" data-trn-key="link1">Establishment</a>
-            <a href="#restaurant" class="trn nav_link" data-trn-key="link2">Restaurants</a>
+            <a href ="itaroa/establishment" class="trn nav_link" data-trn-key="link1">Establishments</a>
+            <a href="itaroa/establishment#shops" class="trn nav_link" data-trn-key="Shops">Shops</a>
+            <a href="itaroa/establishment#restaurants" class="trn nav_link" data-trn-key="link2">Restaurants
+            </a>
             <a href="#location" class="trn nav_link" data-trn-key="link3">Location</a>
             <!-- LANGUAGE SELECTOR -->
 
