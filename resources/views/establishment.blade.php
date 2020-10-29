@@ -25,7 +25,7 @@
             </a>
             <a href ="establishment" class="trn nav_link" data-trn-key="link1">Establishment</a>
             <a href="#restaurant" class="trn nav_link" data-trn-key="link2">Restaurants</a>
-            <a href="#location" class="trn nav_link" data-trn-key="link3">Location</a>
+            <a href="{{URL::route('welcome')}}#location" class="trn nav_link" data-trn-key="link3">Location</a>
             <!-- LANGUAGE SELECTOR -->
 
             <select class="selectpicker" data-width="fit">
@@ -38,6 +38,7 @@
         <div class="banner">
         </div>
         <!--Shops-->
+        <h2 id="shops"class="trn" data-trn-key="Shops">Shops</h2>
         <div class="row-establishments">
         @foreach($establishments as $establishment)
         
@@ -56,6 +57,7 @@
         @endforeach
         </div>
         <!--Restaurants-->
+        <h2 id="restaurants"class="trn" data-trn-key="Restaurants">Restaurants</h2>
         <div class="row-establishments">
         @foreach($restaurants as $restaurant)
         
