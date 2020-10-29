@@ -16,28 +16,40 @@
         <!-- Styles -->
         <link rel="stylesheet" href="{{URL::asset('css/style.css')}}">
         <link rel="stylesheet" href="{{URL::asset('css/bootstrap.min.css')}}">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet" type="text/css">
+
+        <!--Scripts -->
+        <script src="{{URL::asset('js/jquery-3.5.1.min.js')}}"></script>
+        <script type="text/javascript" src="{{URL::asset('js/Traduccion/jquery.translate.js')}}"></script>
+        <script type="text/javascript" src="{{URL::asset('js/Traduccion/Diccionario.js')}}"></script>
     </head>
     <body>
-        <!-- Navbar -->
-        <nav class="navbar sticky-top navbar-light bg-light">
-        <a style="width:10%"href="{{URL::route('welcome')}}">
-                <img width="100%" class="d-inline-block align-top" alt="" loading="lazy" src="{{URL::asset('img/logo.png')}}">
+         <!-- Navbar -->
+         <nav class="navbar sticky-top navbar-light bg-light">
+            <a style="width:10%"href="{{URL::route('welcome')}}">
+            <img width="100%" class="d-inline-block align-top" alt="" loading="lazy" src="{{URL::asset('img/logo.png')}}">
             </a>
-            <a href ="establishment" class="trn nav_link" data-trn-key="link1">Establishment</a>
+            <a href ="itaroa/establishment" class="trn nav_link" data-trn-key="link1">Establishment</a>
             <a href="#restaurant" class="trn nav_link" data-trn-key="link2">Restaurants</a>
             <a href="#location" class="trn nav_link" data-trn-key="link3">Location</a>
             <!-- LANGUAGE SELECTOR -->
-
-            <select class="selectpicker" data-width="fit">
-            <option class="idioma" data-name="en"><img src="{{URL::asset('img/logo.png')}}"></img>English</option>
-            <option class="idioma" data-name="es"><img src="/img/es.png"></img>Español</option>
-            <option class="idioma" data-name="eu"data-content='<span class="flag-icon flag-icon-mx"></span> Euskera'>Euskera</option>
-            </select>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler77" aria-controls="" aria-expanded="false" aria-label="Toggle navigation"> 
+                <div class="dropdown" style="display: inline-block;">
+                    <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink78" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink78"> 
+                        <a class="dropdown-item idioma" data-name="en"><span class="flag-icon flag-icon-gb"></span> English</a> 
+                        <a class="dropdown-item idioma" data-name="es"><span class="flag-icon flag-icon-es"></span> Español</a> 
+                        <a class="dropdown-item idioma" data-name="eu"><span class="flag-icon flag-icon-ru"></span> Euskera</a> 
+                    </div>
+                </div>
+            </button> 
+        </nav>
 
         <!-- Banner -->
         <div class="banner">
         </div>
         <!--Shops-->
+        <h2 style="margin-left:45%;margin-top:2%;font-wheight:bold;text-shadow:2px 2px 2px black">Shops</h2>
         <div class="row-establishments">
         @foreach($establishments as $establishment)
         
