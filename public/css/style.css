@@ -225,9 +225,19 @@ font-family: Alef;
     
     }
     .card{
-        width: 95%;
+        width: 75%;
+        margin-left: 15%;
     }
     .card-img{  
-        width: 20%;
+        width: 100%;
+    }
+
+    /* Filas de los productos*/
+    .row-products{
+        display: inline-block;
+        width: 100%;
+    }
+    .row-products img{
+        width: 50%;
     }
   }
