@@ -29,8 +29,8 @@
             <a style="width:10%"href="{{URL::route('welcome')}}">
             <img width="100%" class="d-inline-block align-top" alt="" loading="lazy" src="{{URL::asset('img/logo.png')}}">
             </a>
-            <a href ="itaroa/establishment" class="trn nav_link" data-trn-key="link1">Establishment</a>
-            <a href="#restaurant" class="trn nav_link" data-trn-key="link2">Restaurants</a>
+            <a href ="establishment" class="trn nav_link" data-trn-key="link1">Establishment</a>
+            <a href="establishment#restaurants" class="trn nav_link" data-trn-key="link2">Restaurants</a>
             <a href="{{URL::route('welcome')}}#location" class="trn nav_link" data-trn-key="link3">Location</a>
             <!-- LANGUAGE SELECTOR -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler77" aria-controls="" aria-expanded="false" aria-label="Toggle navigation"> 
@@ -91,8 +91,8 @@
     </footer>
     
     <!-- JQUERY, POPPER, BOOTSTRAP-->
-    <script src="js/jquery-3.5.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="{{URL::asset('js/jquery-3.5.1.min.js')}}"></script>
+    <script src="{{URL::asset('js/popper.min.js')}}"></script>
+    <script src="{{URL::asset('js/bootstrap.min.js')}}"></script>
     </body>
 </html>

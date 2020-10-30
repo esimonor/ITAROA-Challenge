@@ -129,7 +129,7 @@
             </div>
         </div>
     <footer class="footer">
-      <p>ITAROA &copy 2020</p>
+      <p><a href="/snake" style="text-decoration:none;color:black">ITAROA</a> &copy 2020</p>
     </footer>
     
     <!-- JQUERY, POPPER, BOOTSTRAP-->

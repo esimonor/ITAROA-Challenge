@@ -87,7 +87,7 @@ jQuery(document).ready(function($) {
             en:"Citypark, from 4:00 p.m. Karting from 5:00 p.m. (Saturdays and Sundays from 12: 00h)",
             eu:"Citypark, 16: 00etatik aurrera. Kartinga 17: 00etatik aurrera. (Larunbat eta igandeetan 12: 00etatik aurrera)",
             es:"Citypark, desde 16:00h. Karting desde 17:00h. (sábados y domingos desde 12:00h)"			
-        },
+        }
 
         
 
