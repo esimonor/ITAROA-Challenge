@@ -24,6 +24,7 @@
             <img width="100%" class="d-inline-block align-top" alt="" loading="lazy" src="{{URL::asset('img/logo.png')}}">
             </a>
             <a href ="establishment" class="trn nav_link" data-trn-key="link1">Establishment</a>
+            <a href="establishment#shops" class="trn nav_link" data-trn-key="Shops">Shops</a>
             <a href="establishment#restaurants" class="trn nav_link" data-trn-key="link2">Restaurants</a>
             <a href="{{URL::route('welcome')}}#location" class="trn nav_link" data-trn-key="link3">Location</a>
             <!-- LANGUAGE SELECTOR -->
