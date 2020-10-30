@@ -40,7 +40,7 @@ class productController extends Controller
         $product = new Products;
 
         // Guardar imagen en servidor:
-        // Coje el archivo enviado
+        // Coge el archivo enviado
         $file=$request->file('photo');
         // Se le da un nombre distinto para que no haya nombres repetidos y confictos
         $name=time().$file->getClientOriginalName();
