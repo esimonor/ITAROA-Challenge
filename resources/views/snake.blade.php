@@ -19,6 +19,7 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" rel="stylesheet" type="text/css">
 
         <!--Scripts -->
+        <!--Scripts -->
         <script src="{{URL::asset('js/jquery-3.5.1.min.js')}}"></script>
         <script type="text/javascript" src="{{URL::asset('js/Traduccion/jquery.translate.js')}}"></script>
         <script type="text/javascript" src="{{URL::asset('js/Traduccion/Diccionario.js')}}"></script>
@@ -30,11 +31,23 @@
             <img width="100%" class="d-inline-block align-top" alt="" loading="lazy" src="{{URL::asset('img/logo.png')}}">
             </a>
             <a href ="establishment" class="trn nav_link" data-trn-key="link1">Establishment</a>
+            <a href="establishment#shops" class="trn nav_link" data-trn-key="Shops">Shops</a>
             <a href="establishment#restaurants" class="trn nav_link" data-trn-key="link2">Restaurants</a>
             <a href="{{URL::route('welcome')}}#location" class="trn nav_link" data-trn-key="link3">Location</a>
+            <!-- LANGUAGE SELECTOR -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler77" aria-controls="" aria-expanded="false" aria-label="Toggle navigation"> 
+                <div class="dropdown" style="display: inline-block;">
+                    <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink78" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink78"> 
+                        <a class="dropdown-item idioma" data-name="en"><span class="flag-icon flag-icon-gb"></span> English</a> 
+                        <a class="dropdown-item idioma" data-name="es"><span class="flag-icon flag-icon-es"></span> Español</a> 
+                        <a class="dropdown-item idioma" data-name="eu"><span class="flag-icon flag-icon-ru"></span> Euskera</a> 
+                    </div>
+                </div>
+            </button> 
         </nav>
 
-    <span>Puntos: </span><div id="score">0</div>
+    <span class="trn" data-trn-key="Puntos">Puntos: </span><div id="score">0</div>
     <canvas id="snakeboard" width="400" height="400"></canvas>
 
     <style>
@@ -222,4 +235,8 @@
     }
     
   </script>
+  <!-- JQUERY, POPPER, BOOTSTRAP-->
+    <script src="{{URL::asset('js/jquery-3.5.1.min.js')}}"></script>
+    <script src="{{URL::asset('js/popper.min.js')}}"></script>
+    <script src="{{URL::asset('js/bootstrap.min.js')}}"></script>
 </html>

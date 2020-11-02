@@ -40,7 +40,7 @@
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler77" aria-controls="" aria-expanded="false" aria-label="Toggle navigation"> 
                 <div class="dropdown" style="display: inline-block;">
-                    <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink78" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Language</a>
+                    <a class="nav-link dropdown-toggle trn"  id="navbarDropdownMenuLink78" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-trn-key="language">Language</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink78"> 
                         <a class="dropdown-item idioma" data-name="en"><span class="flag-icon flag-icon-gb"></span> English</a> 
                         <a class="dropdown-item idioma" data-name="es"><span class="flag-icon flag-icon-es"></span> Español</a> 
@@ -129,7 +129,7 @@
             </div>
         </div>
     <footer class="footer">
-      <p><a href="/snake" style="text-decoration:none;color:black">ITAROA</a> &copy 2020</p>
+      <p>ITAROA &copy 2020</p>
     </footer>
     
     <!-- JQUERY, POPPER, BOOTSTRAP-->
